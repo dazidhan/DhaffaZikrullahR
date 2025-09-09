@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Dhaffa Zikrullah Ramadhan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .hero-section {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        .section {
+            transition: all 0.3s ease;
+        }
+        .section:hover {
+            transform: translateY(-5px);
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="fade-in">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white shadow-lg bg-opacity-90 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-indigo-600">Portofolio</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="text-gray-700 hover:text-indigo-600 transition">Tentang</a></li>
+                <li><a href="#projects" class="text-gray-700 hover:text-indigo-600 transition">Proyek</a></li>
+                <li><a href="#contact" class="text-gray-700 hover:text-indigo-600 transition">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white text-center py-32 px-6">
+        <div class="container mx-auto max-w-4xl">
+            <div class="mb-8">
+                <img src="https://placehold.co/200x200" alt="Potret close-up seorang pria muda bernama Dhaffa Zikrullah Ramadhan dengan rambut lurus, kacamata hitam, ekspresi bersahabat, mengenakan kemeja biru gelap, latar belakang netral di dalam ruangan dengan pencahayaan hangat" class="rounded-full mx-auto border-4 border-white shadow-lg" onerror="this.style.display='none'">
+            </div>
+            <h1 class="text-5xl font-bold mb-4">Dhaffa Zikrullah Ramadhan</h1>
+            <p class="text-xl mb-6">Mahasiswa Teknik Informatika di UIN Sunan Gunung Djati</p>
+            <p class="text-lg">Berfokus pada pengembangan perangkat lunak, analisis data, dan inovasi teknologi untuk kebaikan masyarakat.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-white py-20 px-6">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-10">Tentang Saya</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <p class="text-gray-600 mb-4">Saya adalah mahasiswa Teknik Informatika di UIN Sunan Gunung Djati Bandung, dengan passion di bidang pengembangan web, mobile aplikasi, dan kecerdasan buatan. Selama studi, saya telah terlibat dalam berbagai proyek yang meningkatkan keterampilan teknis saya.</p>
+                    <p class="text-gray-600 mb-4">Saya percaya bahwa teknologi dapat menjadi jembatan untuk solusi masalah nyata, khususnya dalam konteks pendidikan dan kesehatan. Saya selalu bersemangat untuk belajar hal baru dan berkolaborasi dengan orang lain untuk mencapai tujuan bersama.</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://placehold.co/400x300" alt="Ilustrasi sebuah buku terbuka dengan kode pemrograman di halaman, pohon pengetahuan dengan cabang berbentuk ikon teknologi seperti HTML, CSS, JavaScript, dan Python, di latar belakang kampus universitas dengan gedung-gedung modern dan taman hijau" class="rounded-lg shadow-lg" onerror="this.style.display='none'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-gray-100 py-20 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-10">Proyek Saya</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://placehold.co/400x250" alt="Screenshot antarmuka aplikasi web responsive dengan desain minimalis, menampilkan peta interaktif Bandung, ikon lokasi merah, panel informasi lokasi wisata, dan tombol navigasi dengan tema warna biru dan putih" class="w-full h-48 object-cover" onerror="this.style.display='none'">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Aplikasi Wisata Bandung</h3>
+                        <p class="text-gray-600 mb-4">Aplikasi web untuk mengeksplorasi tempat wisata di Bandung dengan peta interaktif dan informasi detail. Dibuat menggunakan HTML, CSS, dan JavaScript.</p>
+                        <a href="#" class="text-indigo-600 hover:text-indigo-800">Lihat Detail</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://placehold.co/400x250" alt="Antarmuka sistem manajemen stok inventory dengan tabel produk, grafik batang menunjukkan jumlah stok, tombol tambah hapus edit, menggunakan warna hijau dan abu-abu, desain dasbor admin" class="w-full h-48 object-cover" onerror="this.style.display='none'">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Sistem Manajemen Stok</h3>
+                        <p class="text-gray-600 mb-4">Aplikasi sederhana untuk mengelola stok barang dengan fitur CRUD dasar. Menggunakan basis data lokal dan interface yang user-friendly.</p>
+                        <a href="#" class="text-indigo-600 hover:text-indigo-800">Lihat Detail</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://placehold.co/400x250" alt="Tampilan website e-learning dengan bagian kursus online, video pelajaran, forum diskusi, avatar pengguna, tema edukasi dengan warna oranye dan biru" class="w-full h-48 object-cover" onerror="this.style.display='none'">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Platform E-Learning</h3>
+                        <p class="text-gray-600 mb-4">Platform pembelajaran daring sederhana untuk mahasiswa dengan video, materi, dan quiz. Fokus pada keterhubungan tanpa perlu database eksternal.</p>
+                        <a href="#" class="text-indigo-600 hover:text-indigo-800">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-white py-20 px-6">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-10">Kontak Saya</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4">Info Kontak</h3>
+                    <p class="text-gray-600 mb-2"><strong>Email:</strong> dhaffa@example.com</p>
+                    <p class="text-gray-600 mb-2"><strong>Telepon:</strong> +62 812 3456 7890</p>
+                    <p class="text-gray-600 mb-4"><strong>Universitas:</strong> UIN Sunan Gunung Djati, Bandung</p>
+                    <p class="text-gray-600">Saya terbuka untuk diskusi kolaborasi atau peluang kerja di bidang teknologi.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-700 mb-4">Sosial Media</h3>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-indigo-600 hover:text-indigo-800">LinkedIn</a>
+                        <a href="#" class="text-indigo-600 hover:text-indigo-800">GitHub</a>
+                        <a href="#" class="text-indigo-600 hover:text-indigo-800">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 px-6">
+        <div class="container mx-auto text-center">
+            <p>© 2023 Dhaffa Zikrullah Ramadhan. Semua hak dilindungi.</p>
+            <p class="mt-2">Dibuat dengan passion untuk belajar dan berbagi.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple scroll animation
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    section.classList.add('fade-in');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+</content>
+</create_file>
